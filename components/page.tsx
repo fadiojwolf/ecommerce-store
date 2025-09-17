@@ -8,7 +8,7 @@ import Billboard from "@/components/billboard";
 import Container from "@/components/ui/container";
 import  Filter  from "../app/(routes)/category/[categoryId]/components/filter";
 import NoResult from "@/components/ui/no-results";
-import ProductCard from "@/components/product-card";
+import ProductCard from "@/components/ui/product-card";
 import qs from "query-string";
 import MobileFilter from "../app/(routes)/category/[categoryId]/components/mobile-filter";
 

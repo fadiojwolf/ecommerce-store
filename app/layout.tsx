@@ -3,6 +3,8 @@ import { Urbanist } from 'next/font/google'
 import './globals.css'
 import Footer from '@/components/footer'
 import Navbar from '@/components/navbar'
+import Modal from '@/components/ui/modal'
+import ModalProvider from '@/providers/modul-provider'
 
 const font = Urbanist({ subsets: ['latin'] })
 
@@ -19,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
+        <ModalProvider />
         <Navbar />
         {children}
         <Footer />
