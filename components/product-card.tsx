@@ -2,9 +2,9 @@
 
 import { Product } from "@/types";
 import Image from "next/image";
-import IconButton from "./icon-button";
+import IconButton from "./ui/icon-button";
 import { Expand, ShoppingCart } from "lucide-react";
-import Currency from "./currency";
+import Currency from "./ui/currency";
 import { useRouter } from "next/navigation";
 
 interface ProductCardProps {
