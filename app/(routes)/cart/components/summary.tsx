@@ -16,12 +16,12 @@ const Summary  = () => {
 
     useEffect(() =>{
         if (searchParams.get("success")) {
-            toast.success("Pament completed.");
+            toast.success("Payment completed.");
             removeAll();
         }
 
         if (searchParams.get("canceled")) {
-            toast.error("Somthing went wrong.");
+            toast.error("Something went wrong.");
         }
     }, [searchParams, removeAll]);
     
@@ -38,7 +38,7 @@ const Summary  = () => {
     }
     
     return (
-        <div
+        <div className="
             mt-16
             rounded-lg
             bg-gray-50
@@ -47,15 +47,15 @@ const Summary  = () => {
             sm:p-6
             lg:col-span-5
             lg:mt-0
-            ld:p-8
+            ld:p-8"
         >
             <h2 className="text-lg font-medium text-gray-900">
                 Order Summary
             </h2>
             <div className="mt-6 space-y-4">
-                <div className="flex item-center justify-between botder-t border-gray-200 pt-4">
+                <div className="flex items-center justify-between border-t border-gray-200 pt-4">
                     <div className="text-base font-medium text-gray-900">
-                        Order toal
+                        Order total
                     </div>
                         <Currency value={totalPrice} />
                 </div>
