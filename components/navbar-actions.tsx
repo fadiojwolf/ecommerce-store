@@ -2,7 +2,7 @@
 
 import {ShoppingBag} from "lucide-react"
 import { use, useEffect, useState } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 import Button from "./ui/button";
 import useCart from "@/hooks/use-cart";
